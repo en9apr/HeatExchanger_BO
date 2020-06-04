@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.x-d214c8dfd5ba
+Exec   : blockMesh -case Exeter_CFD_Problems/data/HeatExchanger/case_multi/
+Date   : Jun 04 2020
+Time   : 17:33:28
+Host   : "andrew-pc"
+PID    : 7321
+Case   : Exeter_CFD_Problems/data/HeatExchanger/case_multi
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "Exeter_CFD_Problems/data/HeatExchanger/case_multi/constant/polyMesh/blockMeshDict"
+Creating curved edges
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.015 .. 0.015
+        j : 0.004 .. 0.004
+        k : 0.1 .. 0.1
+
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.65 -0.2 0) (0.85 0.2 0.1)
+  nPoints: 20402
+  nCells: 10000
+  nFaces: 40200
+  nInternalFaces: 19800
+----------------
+Patches
+----------------
+  patch 0 (start: 19800 size: 100) name: topWall
+  patch 1 (start: 19900 size: 100) name: inlet
+  patch 2 (start: 20000 size: 100) name: outlet
+  patch 3 (start: 20100 size: 100) name: bottomWall
+  patch 4 (start: 20200 size: 10000) name: front
+  patch 5 (start: 30200 size: 10000) name: back
+
+End
+
